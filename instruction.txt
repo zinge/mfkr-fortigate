@@ -5,10 +5,10 @@
 	openssl x509 -inform DER -in fg-key.cer -out fg-key.crt
 
 2. Добавить:
-	Добавить CA(например fg-key.crt) в папку /usr/local/share/ca-certificates/
+	Добавить CA(например fg-key.crt) в папку /usr/share/ca-certificates/
 
 	Команда в консоли:
-	sudo cp fg-key.crt /usr/local/share/ca-certificates/fg-key.crt
+	sudo cp fg-key.crt /usr/share/ca-certificates/fg-key.crt
 
 2.1. Обновить CA хранилище:
 
@@ -16,10 +16,10 @@
 	sudo update-ca-certificates
 
 3. Удалить:
-	Удалить CA(например fg-key.crt) to dir /usr/local/share/ca-certificates/
+	Удалить CA(например fg-key.crt) to dir /usr/share/ca-certificates/
 
 	Команда в консоли:
-	sudo rm /usr/local/share/ca-certificates/fg-key.crt
+	sudo rm /usr/share/ca-certificates/fg-key.crt
 
 3.1. Обновить CA хранилище:
 
