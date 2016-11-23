@@ -7,13 +7,18 @@
 2. Добавить:
 	Добавить CA(например fg-key.crt) в папку /usr/share/ca-certificates/
 
-	Команда в консоли:
+	Команда в консоли(debian):
 	sudo cp fg-key.crt /usr/share/ca-certificates/fg-key.crt
+	Команда в консоли(centos 7):
+	sudo cp fg-key.crt /etc/pki/ca-trust/source/anchors/fg-key.crt
+
 
 2.1. Обновить CA хранилище:
 
-	Команда в консоли:
+	Команда в консоли(debian):
 	sudo update-ca-certificates
+	Команда в консоли(centos 7):
+	sudo update-ca-trust extract
 
 3. Удалить:
 	Удалить CA(например fg-key.crt) to dir /usr/share/ca-certificates/
