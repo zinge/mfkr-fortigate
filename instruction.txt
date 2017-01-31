@@ -16,8 +16,9 @@
 2.1. Обновить CA хранилище:
 
 	Команда в консоли(debian):
+	sudo dpkg-reconfigure ca-certificates
 	sudo update-ca-certificates
-	Команда в консоли(centos 7):
+  	Команда в консоли(centos 7):
 	sudo update-ca-trust extract
 
 3. Удалить:
